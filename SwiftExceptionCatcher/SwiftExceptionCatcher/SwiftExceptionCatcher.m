@@ -10,6 +10,7 @@
 #import "SwiftExceptionCatcher.h"
 
 void tryOperation(void (^tryBlock)(), void(^catchBlock)(NSException *e)) {
+    
     @try {
         tryBlock();
     }
