@@ -8,15 +8,21 @@
 
 import Foundation
 
-// This Extensions adds the ability to catch NSException Types
-// with Swift
+
+/**
+ * This Extension adds the ability to catch NSException Types in Swift.
+ */
 extension NSException : ErrorType {
-    public var _domain: String { return "tech.redroma.Aroma" }
+    public var _domain: String { return "tech.redroma.SwiftExceptionCatcher" }
     public var _code: Int { return 0 }
 }
 
-// This class wraps Operations that may throw NSException types and catches them in a safe way
-// Primarily designed to overcome Swift's exception-handling limitations.
+/**
+   This class wraps Operations that may throw NSException types and catches them in a safe way
+   Primarily designed to overcome Swift's exception-handling limitations.
+ 
+    - parameter operation: This operation may throw an Objective-C NSException type and must be safely wrapped.
+*/
 public func tryOp<T>(operation: (() throws -> T)) throws -> T {
     
     var result: T?

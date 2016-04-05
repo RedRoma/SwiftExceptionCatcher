@@ -9,6 +9,9 @@ This is useful when using Thrift libraries, where it is perfectly normal for cod
 
 
 # Cocoapods
+```xml
+pod 'SwiftExceptionCatcher', :git => 'https://github.com/RedRoma/SwiftExceptionCatcher.git'
+```
 
 # API
 Simply wrap the code-in-play in the `tryOp` function call.
