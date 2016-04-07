@@ -12,6 +12,14 @@ This is useful when using Thrift libraries, where it is perfectly normal for cod
 pod 'SwiftExceptionCatcher', :git => 'https://github.com/RedRoma/SwiftExceptionCatcher.git'
 ```
 
+## Using RedRoma Repository
+```xml
+# RedRoma Repository
+source 'https://github.com/RedRoma/CocoaSpecs.git'
+
+pod 'SwiftExceptionCatcher', '1.0'
+```
+
 # API
 Simply wrap the code-in-play in the `tryOp` function call.
 
