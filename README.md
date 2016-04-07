@@ -1,7 +1,7 @@
 # SwiftExceptionCatcher
 
 [<img src="http://brand.redroma.tech/Logos/RedRoma-Logo%402x.png
-" width="300">](https://RedRoma.tech)
+" width="300">](http://RedRoma.tech)
 
 `SwiftExceptionCatcher` allows Swift Code to catch exceptions thrown from Objective-C code.
 
