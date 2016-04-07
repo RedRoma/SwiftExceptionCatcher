@@ -12,7 +12,7 @@ This is useful when using Thrift libraries, where it is perfectly normal for cod
 pod 'SwiftExceptionCatcher', :git => 'https://github.com/RedRoma/SwiftExceptionCatcher.git'
 ```
 
-## Using RedRoma Repository
+## Using the RedRoma Repository
 ```xml
 # RedRoma Repository
 source 'https://github.com/RedRoma/CocoaSpecs.git'
