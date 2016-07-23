@@ -45,7 +45,7 @@ class SwiftExceptionCatcherTests: XCTestCase {
     
     func testWhenSwiftThrows() {
         do {
-            try tryOp() { try self.somethingThatMightThrow(true) }
+            try tryOp() { try self.somethingThatMightThrow(shouldThrow: true) }
             XCTFail("Expected Exception")
         }
         catch {
@@ -55,7 +55,7 @@ class SwiftExceptionCatcherTests: XCTestCase {
     
     func testWhenSwiftNotThrows() {
         do {
-            try tryOp() { try self.somethingThatMightThrow(false) }
+            try tryOp() { try self.somethingThatMightThrow(shouldThrow: false) }
         }
         catch let ex {
             XCTFail("Unexpected Exception: \(ex)")
@@ -66,7 +66,7 @@ class SwiftExceptionCatcherTests: XCTestCase {
     private func somethingThatMightThrow(shouldThrow: Bool = true) throws {
         
         if shouldThrow {
-            throw NSException(name: "Test", reason: "Because", userInfo: nil)
+            throw NSException(name: "Test" as NSExceptionName, reason: "Because", userInfo: nil)
         }
         else {
             print("Not Throwing")

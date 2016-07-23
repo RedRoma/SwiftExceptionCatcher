@@ -12,7 +12,7 @@ import Foundation
 /**
  * This Extension adds the ability to catch NSException Types in Swift.
  */
-extension NSException : ErrorType {
+extension NSException : ErrorProtocol {
     public var _domain: String { return "tech.redroma.SwiftExceptionCatcher" }
     public var _code: Int { return 0 }
 }
@@ -23,7 +23,7 @@ extension NSException : ErrorType {
  
     - parameter operation: This operation may throw an Objective-C NSException type and must be safely wrapped.
 */
-public func tryOp<T>(operation: (() throws -> T)) throws -> T {
+public func tryOp<T>(_ operation: (() throws -> T)) throws -> T {
     
     var result: T?
     var error: NSException?
@@ -37,7 +37,7 @@ public func tryOp<T>(operation: (() throws -> T)) throws -> T {
         return
     }
     
-    let theCatch: (NSException!) -> () = { ex in
+    let theCatch: (NSException?) -> () = { ex in
         error = ex
     }
     
@@ -48,6 +48,6 @@ public func tryOp<T>(operation: (() throws -> T)) throws -> T {
     } else if let ex = error {
         throw ex
     } else {
-        throw NSException(name: "Unknown", reason: "Error Occured performing Operation", userInfo: nil)
+        throw NSException(name: "Unknown" as NSExceptionName, reason: "Error Occured performing Operation", userInfo: nil)
     }
 }
