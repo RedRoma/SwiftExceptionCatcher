@@ -9,42 +9,42 @@
 import XCTest
 @testable import SwiftExceptionCatcher
 
-class SwiftExceptionCatcherTests: XCTestCase {
+class SwiftExceptionCatcherTests: XCTestCase
+{
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testWhenThrows() {
+    func testWhenThrows()
+    {
         
-        do {
-            try tryOp() {
+        do
+        {
+            try tryOp()
+            {
                 Throwing.functionThatThrows()
             }
             XCTFail("Expected Exception")
         }
-        catch {
+        catch
+        {
             //Test Passed
         }
     }
     
-    func testWhenNotThrows() {
-        do {
+    func testWhenNotThrows()
+    {
+        do
+        {
             try tryOp() { Throwing.functionNotThrowing() }
         }
-        catch let ex {
+        catch let ex
+        {
             XCTFail("Unexpected Exception: \(ex)")
         }
     }
     
-    func testWhenSwiftThrows() {
-        do {
+    func testWhenSwiftThrows()
+    {
+        do
+        {
             try tryOp() { try self.somethingThatMightThrow(true) }
             XCTFail("Expected Exception")
         }
@@ -53,22 +53,28 @@ class SwiftExceptionCatcherTests: XCTestCase {
         }
     }
     
-    func testWhenSwiftNotThrows() {
-        do {
+    func testWhenSwiftNotThrows()
+    {
+        do
+        {
             try tryOp() { try self.somethingThatMightThrow(false) }
         }
-        catch let ex {
+        catch let ex
+        {
             XCTFail("Unexpected Exception: \(ex)")
         }
     }
     
     
-    private func somethingThatMightThrow(shouldThrow: Bool = true) throws {
+    private func somethingThatMightThrow(shouldThrow: Bool = true) throws
+    {
         
-        if shouldThrow {
+        if shouldThrow
+        {
             throw NSException(name: "Test", reason: "Because", userInfo: nil)
         }
-        else {
+        else
+        {
             print("Not Throwing")
         }
     }
