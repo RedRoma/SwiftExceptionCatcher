@@ -2,7 +2,7 @@
 //  TryOperation.swift
 //  SwiftExceptionCatcher
 //
-//  Created by Juan Wellington Moreno on 4/4/16.
+//  Created by Wellington Moreno on 4/4/16.
 //  Copyright © 2016 RedRoma, Inc. All rights reserved.
 //
 
@@ -12,7 +12,8 @@ import Foundation
 /**
  * This Extension adds the ability to catch NSException Types in Swift.
  */
-extension NSException : ErrorType {
+extension NSException : Error
+{
     public var _domain: String { return "tech.redroma.SwiftExceptionCatcher" }
     public var _code: Int { return 0 }
 }
@@ -23,31 +24,41 @@ extension NSException : ErrorType {
  
     - parameter operation: This operation may throw an Objective-C NSException type and must be safely wrapped.
 */
-public func tryOp<T>(operation: (() throws -> T)) throws -> T {
+public func tryOp<T>(_ operation: @escaping (() throws -> T)) throws -> T
+{
     
     var result: T?
     var error: NSException?
     
-    let theTry: () -> () = {
-        do {
+    let theTry: () -> () =
+    {
+        do
+        {
             result = try operation()
-        } catch let ex {
+        }
+        catch let ex
+        {
             error = ex as? NSException
         }
         return
     }
     
-    let theCatch: (NSException!) -> () = { ex in
+    let theCatch: (NSException?) -> () = { ex in
         error = ex
     }
     
     tryOperation(theTry, theCatch)
     
-    if let result = result {
+    if let result = result
+    {
         return result
-    } else if let ex = error {
-        throw ex
-    } else {
-        throw NSException(name: "Unknown", reason: "Error Occured performing Operation", userInfo: nil)
+    }
+    else if let ex = error
+    {
+        throw ex as Error
+    }
+    else
+    {
+        throw NSException(name: NSExceptionName(rawValue: "Unknown"), reason: "Error Occured performing Operation", userInfo: nil)
     }
 }
