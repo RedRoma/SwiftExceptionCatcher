@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DE683D931CB380180072F98A"
+               BuildableName = "SwiftExceptionCatcherTests.xctest"
+               BlueprintName = "SwiftExceptionCatcherTests"
+               ReferencedContainer = "container:SwiftExceptionCatcher.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "DE683D891CB380180072F98A"
+            BuildableName = "SwiftExceptionCatcher.framework"
+            BlueprintName = "SwiftExceptionCatcher"
+            ReferencedContainer = "container:SwiftExceptionCatcher.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>

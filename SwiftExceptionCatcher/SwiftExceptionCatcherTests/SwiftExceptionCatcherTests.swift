@@ -66,12 +66,12 @@ class SwiftExceptionCatcherTests: XCTestCase
     }
     
     
-    private func somethingThatMightThrow(shouldThrow: Bool = true) throws
+    fileprivate func somethingThatMightThrow(_ shouldThrow: Bool = true) throws
     {
         
         if shouldThrow
         {
-            throw NSException(name: "Test", reason: "Because", userInfo: nil)
+            throw NSException(name: NSExceptionName(rawValue: "Test"), reason: "Because", userInfo: nil)
         }
         else
         {
