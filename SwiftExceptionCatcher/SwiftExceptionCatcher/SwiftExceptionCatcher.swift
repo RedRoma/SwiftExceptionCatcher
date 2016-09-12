@@ -2,7 +2,7 @@
 //  TryOperation.swift
 //  SwiftExceptionCatcher
 //
-//  Created by Juan Wellington Moreno on 4/4/16.
+//  Created by Wellington Moreno on 4/4/16.
 //  Copyright © 2016 RedRoma, Inc. All rights reserved.
 //
 
