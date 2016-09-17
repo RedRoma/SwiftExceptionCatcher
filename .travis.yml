@@ -1,0 +1,18 @@
+language: objective-c
+cache: cocoapods
+rvm: 2.2.2
+osx_image: xcode8
+before_install:
+  - brew update
+
+  # Only if app has Carthage dependencies
+  # - carthage bootstrap --verbose
+
+script:
+  - carthage build --no-skip-current
+  - |
+    xcodebuild test \
+    -project SwiftExceptionCatcher/SwiftExceptionCatcher.xcodeproj \
+    -scheme SwiftExceptionCatcher \
+    -sdk iphonesimulator \
+    -destination 'platform=iOS Simulator,name=iPhone 6,OS=latest'
