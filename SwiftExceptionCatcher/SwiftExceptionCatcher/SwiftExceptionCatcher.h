@@ -21,6 +21,6 @@ FOUNDATION_EXPORT const unsigned char SwiftExceptionCatcherVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <SwiftExceptionCatcher/PublicHeader.h>
 
 
-void tryOperation(void(^tryBlock)(), void(^catchBlock)(NSException *e));
+void tryOperation(void(^tryBlock)(void), void(^catchBlock)(NSException *e));
 
 #endif

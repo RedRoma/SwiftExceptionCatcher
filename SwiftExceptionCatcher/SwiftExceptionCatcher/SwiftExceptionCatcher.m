@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "SwiftExceptionCatcher.h"
 
-void tryOperation(void (^tryBlock)(), void(^catchBlock)(NSException *e)) {
+void tryOperation(void (^tryBlock)(void), void(^catchBlock)(NSException *e)) {
     
     @try {
         tryBlock();
