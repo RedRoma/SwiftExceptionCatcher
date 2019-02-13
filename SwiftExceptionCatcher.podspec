@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   spec.name             = "SwiftExceptionCatcher"
   spec.module_name      = 'SwiftExceptionCatcher'
-  spec.version          = "1.2"
+  spec.version          = "1.3"
   spec.summary          = "Catch NSException with Swift"
   spec.homepage         = "https://github.com/RedRoma/SwiftExceptionCatcher"
   spec.license          = "Code is Licensed under Apache 2.0"
