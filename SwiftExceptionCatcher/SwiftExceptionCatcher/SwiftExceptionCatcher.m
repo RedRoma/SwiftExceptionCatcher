@@ -3,7 +3,7 @@
 //  SwiftExceptionCatcher
 //
 //  Created by Wellington Moreno on 4/4/16.
-//  Copyright © 2016 RedRoma, Inc. All rights reserved.
+//  Copyright © 2019 RedRoma, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
