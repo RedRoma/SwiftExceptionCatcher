@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DE683D8E1CB380180072F98A /* SwiftExceptionCatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = DE683D8D1CB380180072F98A /* SwiftExceptionCatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		130A1721254A03670018F9FA /* SwiftExceptionCatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 130A171D254A03660018F9FA /* SwiftExceptionCatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		130A1722254A03670018F9FA /* SwiftExceptionCatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130A171E254A03660018F9FA /* SwiftExceptionCatcher.swift */; };
+		130A1723254A03670018F9FA /* SwiftExceptionCatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 130A171F254A03670018F9FA /* SwiftExceptionCatcher.m */; };
+		130A172E254A036F0018F9FA /* LinuxMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130A1728254A036F0018F9FA /* LinuxMain.swift */; };
+		130A172F254A036F0018F9FA /* Throwing.m in Sources */ = {isa = PBXBuildFile; fileRef = 130A172A254A036F0018F9FA /* Throwing.m */; };
+		130A1730254A036F0018F9FA /* SwiftExceptionCatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130A172B254A036F0018F9FA /* SwiftExceptionCatcherTests.swift */; };
+		130A1731254A036F0018F9FA /* Throwing.h in Headers */ = {isa = PBXBuildFile; fileRef = 130A172C254A036F0018F9FA /* Throwing.h */; };
 		DE683D951CB380180072F98A /* SwiftExceptionCatcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE683D8A1CB380180072F98A /* SwiftExceptionCatcher.framework */; };
-		DE683D9A1CB380180072F98A /* SwiftExceptionCatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE683D991CB380180072F98A /* SwiftExceptionCatcherTests.swift */; };
-		DE683DA81CB380320072F98A /* SwiftExceptionCatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = DE683DA51CB380320072F98A /* SwiftExceptionCatcher.m */; };
-		DE683DA91CB380320072F98A /* SwiftExceptionCatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE683DA61CB380320072F98A /* SwiftExceptionCatcher.swift */; };
-		DE683DAD1CB38EFB0072F98A /* Throwing.m in Sources */ = {isa = PBXBuildFile; fileRef = DE683DAC1CB38EFB0072F98A /* Throwing.m */; };
-		DE683DAF1CB3902D0072F98A /* Throwing.h in Headers */ = {isa = PBXBuildFile; fileRef = DE683DAB1CB38EB80072F98A /* Throwing.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,16 +28,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		130A171D254A03660018F9FA /* SwiftExceptionCatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftExceptionCatcher.h; sourceTree = "<group>"; };
+		130A171E254A03660018F9FA /* SwiftExceptionCatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftExceptionCatcher.swift; sourceTree = "<group>"; };
+		130A171F254A03670018F9FA /* SwiftExceptionCatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiftExceptionCatcher.m; sourceTree = "<group>"; };
+		130A1720254A03670018F9FA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		130A1728254A036F0018F9FA /* LinuxMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
+		130A172A254A036F0018F9FA /* Throwing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Throwing.m; sourceTree = "<group>"; };
+		130A172B254A036F0018F9FA /* SwiftExceptionCatcherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftExceptionCatcherTests.swift; sourceTree = "<group>"; };
+		130A172C254A036F0018F9FA /* Throwing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Throwing.h; sourceTree = "<group>"; };
+		130A172D254A036F0018F9FA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE683D8A1CB380180072F98A /* SwiftExceptionCatcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftExceptionCatcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE683D8D1CB380180072F98A /* SwiftExceptionCatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftExceptionCatcher.h; sourceTree = "<group>"; };
-		DE683D8F1CB380180072F98A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE683D941CB380180072F98A /* SwiftExceptionCatcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftExceptionCatcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE683D991CB380180072F98A /* SwiftExceptionCatcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftExceptionCatcherTests.swift; sourceTree = "<group>"; };
-		DE683D9B1CB380180072F98A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DE683DA51CB380320072F98A /* SwiftExceptionCatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiftExceptionCatcher.m; sourceTree = "<group>"; };
-		DE683DA61CB380320072F98A /* SwiftExceptionCatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftExceptionCatcher.swift; sourceTree = "<group>"; };
-		DE683DAB1CB38EB80072F98A /* Throwing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Throwing.h; sourceTree = "<group>"; };
-		DE683DAC1CB38EFB0072F98A /* Throwing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Throwing.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +60,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		130A171B254A03660018F9FA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				130A171C254A03660018F9FA /* SwiftExceptionCatcher */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		130A171C254A03660018F9FA /* SwiftExceptionCatcher */ = {
+			isa = PBXGroup;
+			children = (
+				130A171D254A03660018F9FA /* SwiftExceptionCatcher.h */,
+				130A171E254A03660018F9FA /* SwiftExceptionCatcher.swift */,
+				130A171F254A03670018F9FA /* SwiftExceptionCatcher.m */,
+				130A1720254A03670018F9FA /* Info.plist */,
+			);
+			path = SwiftExceptionCatcher;
+			sourceTree = "<group>";
+		};
+		130A1727254A036F0018F9FA /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				130A1728254A036F0018F9FA /* LinuxMain.swift */,
+				130A1729254A036F0018F9FA /* SwiftExceptionCatcherTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		130A1729254A036F0018F9FA /* SwiftExceptionCatcherTests */ = {
+			isa = PBXGroup;
+			children = (
+				130A172A254A036F0018F9FA /* Throwing.m */,
+				130A172B254A036F0018F9FA /* SwiftExceptionCatcherTests.swift */,
+				130A172C254A036F0018F9FA /* Throwing.h */,
+				130A172D254A036F0018F9FA /* Info.plist */,
+			);
+			path = SwiftExceptionCatcherTests;
+			sourceTree = "<group>";
+		};
 		DE683D801CB380180072F98A = {
 			isa = PBXGroup;
 			children = (
-				DE683D8C1CB380180072F98A /* SwiftExceptionCatcher */,
-				DE683D981CB380180072F98A /* SwiftExceptionCatcherTests */,
+				130A171B254A03660018F9FA /* Sources */,
+				130A1727254A036F0018F9FA /* Tests */,
 				DE683D8B1CB380180072F98A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,28 +117,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DE683D8C1CB380180072F98A /* SwiftExceptionCatcher */ = {
-			isa = PBXGroup;
-			children = (
-				DE683D8D1CB380180072F98A /* SwiftExceptionCatcher.h */,
-				DE683DA51CB380320072F98A /* SwiftExceptionCatcher.m */,
-				DE683DA61CB380320072F98A /* SwiftExceptionCatcher.swift */,
-				DE683D8F1CB380180072F98A /* Info.plist */,
-			);
-			path = SwiftExceptionCatcher;
-			sourceTree = "<group>";
-		};
-		DE683D981CB380180072F98A /* SwiftExceptionCatcherTests */ = {
-			isa = PBXGroup;
-			children = (
-				DE683D991CB380180072F98A /* SwiftExceptionCatcherTests.swift */,
-				DE683D9B1CB380180072F98A /* Info.plist */,
-				DE683DAB1CB38EB80072F98A /* Throwing.h */,
-				DE683DAC1CB38EFB0072F98A /* Throwing.m */,
-			);
-			path = SwiftExceptionCatcherTests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -105,7 +124,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE683D8E1CB380180072F98A /* SwiftExceptionCatcher.h in Headers */,
+				130A1721254A03670018F9FA /* SwiftExceptionCatcher.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +132,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE683DAF1CB3902D0072F98A /* Throwing.h in Headers */,
+				130A1731254A036F0018F9FA /* Throwing.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,8 +239,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE683DA81CB380320072F98A /* SwiftExceptionCatcher.m in Sources */,
-				DE683DA91CB380320072F98A /* SwiftExceptionCatcher.swift in Sources */,
+				130A1723254A03670018F9FA /* SwiftExceptionCatcher.m in Sources */,
+				130A1722254A03670018F9FA /* SwiftExceptionCatcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,8 +248,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE683D9A1CB380180072F98A /* SwiftExceptionCatcherTests.swift in Sources */,
-				DE683DAD1CB38EFB0072F98A /* Throwing.m in Sources */,
+				130A172E254A036F0018F9FA /* LinuxMain.swift in Sources */,
+				130A172F254A036F0018F9FA /* Throwing.m in Sources */,
+				130A1730254A036F0018F9FA /* SwiftExceptionCatcherTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,7 +374,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftExceptionCatcher/Info.plist;
+				INFOPLIST_FILE = Sources/SwiftExceptionCatcher/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.redroma.SwiftExceptionCatcher;
@@ -376,7 +396,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftExceptionCatcher/Info.plist;
+				INFOPLIST_FILE = Sources/SwiftExceptionCatcher/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.redroma.SwiftExceptionCatcher;
@@ -389,14 +409,15 @@
 		DE683DA21CB380180072F98A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 5JBF7MD4UT;
-				INFOPLIST_FILE = SwiftExceptionCatcherTests/Info.plist;
+				INFOPLIST_FILE = Tests/SwiftExceptionCatcherTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.redroma.SwiftExceptionCatcherTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = SwiftExceptionCatcherTests/Throwing.h;
+				SWIFT_OBJC_BRIDGING_HEADER = Tests/SwiftExceptionCatcherTests/Throwing.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -405,14 +426,15 @@
 		DE683DA31CB380180072F98A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 5JBF7MD4UT;
-				INFOPLIST_FILE = SwiftExceptionCatcherTests/Info.plist;
+				INFOPLIST_FILE = Tests/SwiftExceptionCatcherTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.redroma.SwiftExceptionCatcherTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = SwiftExceptionCatcherTests/Throwing.h;
+				SWIFT_OBJC_BRIDGING_HEADER = Tests/SwiftExceptionCatcherTests/Throwing.h;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
